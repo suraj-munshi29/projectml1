@@ -17,7 +17,7 @@ st.markdown("Interactive dashboard for tracking and predicting unaccompanied chi
 # ==========================================
 @st.cache_data
 def load_and_prep_data():
-    df = pd.read_csv("HHS_Unaccompanied_Alien_Children_Program.csv.csv")
+    df = pd.read_csv("HHS_Unaccompanied_Alien_Children_Program.csv")
 
     # Clean numeric columns
     numeric_cols = ['Children in HHS Care', 'Children discharged from HHS Care']
